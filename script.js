@@ -33,8 +33,8 @@ function checkEmail(input) {
 
 //Check required fields
 function checkRequired(inputArr) {
-  inputArr.forEach(function (input) {
-    if (input.value.trim() === "") {
+  inputArr.forEach(function(input) {
+    if (input.value.trim()==="") {
       showError(input, `${getFieldName(input)} is required`);
     } else {
       showSucess(input);
