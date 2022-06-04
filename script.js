@@ -2,7 +2,7 @@ const form = document.getElementById("form");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
-const password2 = document.getElementById("password2");
+const password2 = document.getElementById("confirm");
 
 //Show Input error message
 function showError(input, message) {
@@ -80,4 +80,4 @@ form.addEventListener("submit", function (e) {
   checkLength(password, 6, 25);
   checkEmail(email)
   checkPassowordsMatch(password, password2)
-});
+})
